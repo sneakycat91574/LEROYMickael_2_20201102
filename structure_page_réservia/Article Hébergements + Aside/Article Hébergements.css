@@ -1,0 +1,901 @@
+ul{
+	list-style-type: none;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+@media (min-width: 1000px){
+
+
+section{
+	display: flex;
+	flex-direction: row;
+	justify-content:flex-start;
+}
+
+#lodging{
+	display: flex;
+	flex-direction: column;
+	background-color: #F2F2F2;
+	border:1px solid #F2F2F2;
+	width: 70%;
+	height:550px;
+	border-radius: 15px;
+	padding:10px;
+	margin:20px;
+}
+
+.titrelodging{	
+	margin:20px;
+}
+
+
+#lodginggrid{
+	display: grid;
+	grid-template-columns: repeat(3, 30%);
+	grid-template-rows: repeat(2, 40%);
+	grid-column-gap: 40px;
+	grid-row-gap: 40px;
+	justify-content:center;	
+	align-items: center;
+	padding: 20px;
+	height: 500px;
+
+}
+
+.lodgingcard1{
+	display: flex;
+	flex-direction: column;
+	grid-area: 1 / 1 / 2 / 2;
+	border: 3px solid white;
+	border-radius: 15px;
+	background: white;
+	width: 100%;
+	height: 100%;
+	
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.lodgingcard2{
+	display: flex;
+	flex-direction: column;
+	grid-area: 1 / 2 / 2 / 3;
+	border: 3px solid white;
+	border-radius: 15px;
+	background: white;
+	width: 100%;
+	height: 100%;
+	
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.lodgingcard3{
+	display: flex;
+	flex-direction: column;
+	grid-area: 1 / 3 / 2 / 4;
+	border: 3px solid white;
+	border-radius: 15px;
+	background: white;
+	width: 100%;
+	height: 100%;
+	
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+
+.lodgingcard4{
+	display: flex;
+	flex-direction: column;
+	grid-area: 2 / 1 / 3 / 2;
+	border: 3px solid white;
+	border-radius: 15px;
+	background: white;
+	width: 100%;
+	height: 100%;
+	
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.lodgingcard5{
+	display: flex;
+	flex-direction: column;
+	grid-area: 2 / 2 / 3 / 3;
+	border: 3px solid white;
+	border-radius: 15px;
+	background: white;
+	width: 100%;
+	height: 100%;
+	
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.lodgingcard6{
+	display: flex;
+	flex-direction: column;
+	grid-area: 2 / 3 / 3 / 4;
+	border: 3px solid white;
+	border-radius: 15px;
+	background: white;
+	width: 100%;
+	height: 100%;
+	
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.lodgingcard1:hover, .lodgingcard2:hover, .lodgingcard3:hover, .lodgingcard4:hover, .lodgingcard5:hover, .lodgingcard6:hover{
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	transform: scale(1.01);
+}
+
+.blocimglodging{
+	width: 100%;
+	height: 80%;
+	overflow: hidden;
+
+}
+
+.imglodging{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+
+}
+
+.imgdescription{
+	display: flex;
+	flex-direction: column;
+	background: white;
+	position: relative;
+	bottom: 10px;
+	z-index: 1;
+	height: 30%;
+	padding-bottom: 5px;
+}
+
+.namecardlodging{
+	position: relative;
+	bottom: 10px;
+	width: 100%;
+	padding-left: 10px;
+}
+
+.Afficher{
+	z-index: 2;
+	position: relative;
+	bottom: 50px;
+	margin: 20px;
+}
+
+.checked{
+	color:#0065FC;
+	font-size: 12px;
+}
+
+.unchecked{
+	color: #DEEBFF;
+	font-size: 12px;
+}
+
+#popular{
+
+	display: flex;
+	flex-direction: column;
+	margin: 20px;
+	padding: 10px;
+	border-radius: 15px;
+	background-color: #F2F2F2;
+	width: 30%;
+	height: 550px;
+}
+
+.Title_popular{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.titlepopular{
+
+	text-align: center;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+
+.chart{
+	font-size: 20px;
+	text-align: center;
+	align-self: center;
+	margin: 10px 10px 0px 10px;
+}
+
+.asidepopdirection{
+
+	display: grid;
+	grid-template-columns: 30%;
+	grid-template-rows: repeat(3, 150px);
+	grid-column-gap: 0px;
+	grid-row-gap: 20px;
+	align-items: center;
+}
+
+.blocimgpop{
+	width: 40%;
+	margin-right: 20px;
+}
+
+.imgpop{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius:15px;
+ 
+}
+
+.bandeaublocpop{
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+}
+
+.rateblocpop{
+	position: relative;
+	top:10px;
+}
+
+.bloctxtpop1{
+	position: relative;
+	bottom: 10px;
+}
+
+.rateblocpop1{
+	position: relative;
+	bottom: 10px;
+}
+
+.pricepop{
+	position: relative;
+	bottom:10px;
+}
+.pop1{
+	display: flex;
+	flex-direction: row;
+	grid-area: 1 / 1 / 2 / 2;
+	margin : 20px 20px 10px 20px;
+	border: 3px solid white;
+	border-radius: 15px;
+	background: white;
+	width: 90%;
+	height: 130px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.pop2{
+	display: flex;
+	flex-direction: row;
+	grid-area: 2 / 1 / 3 / 2;
+	margin : 20px 20px 10px 20px;
+	border: 3px solid white;
+	border-radius: 15px;
+	background: white;
+	width: 90%;
+	height: 130px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+}
+
+.pop3{
+	display: flex;
+	flex-direction: row;
+	grid-area: 3 / 1 / 4 / 2;
+	margin : 20px 20px 10px 20px;
+	border: 3px solid white;
+	border-radius: 15px;
+	background: white;
+	width: 90%;
+	height: 130px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.pop1:hover , .pop2:hover , .pop3:hover{
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	transform: scale(1.01);
+}
+
+}
+
+
+@media (max-device-width:700px){
+
+section{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.chart{
+	font-size: 30px;
+	text-align: center;
+	align-self: center;
+	margin: 10px 20px 0px 10px;
+	position: relative;
+	right: 20px;
+}
+
+.Title_popular{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.titlepopular{
+	font-size: 30px;
+	text-align: center;
+	margin-top: 30px;
+	margin-left: 20px;
+}
+
+#popular{
+	order:1;
+	display: flex;
+	flex-direction: column;
+	border: solid 1px #F2F2F2;
+	background-color: #F2F2F2;
+	width: 100%;
+	height: 700px;
+	margin-bottom: 40px;
+
+}
+
+.blocimgpop{
+	width: 40%;
+	margin-right: 20px;
+}
+
+
+.imgpop{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius:15px;
+ 
+}
+
+.bloctxtpop{
+	font-size: 20px;
+}
+
+.bloctxtpop1{
+	font-size: 20px;
+}
+
+.bandeaublocpop{
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+}
+
+
+.rateblocpop1{
+	position: relative;
+	bottom: 10px;
+}
+
+.pricepop{
+	position: relative;
+	bottom:10px;
+}
+
+	.pop1{
+	display: flex;
+	flex-direction: row;
+	grid-area: 1 / 1 / 2 / 2;
+	margin : 20px 20px 10px 20px;
+	border: 3px solid white;
+	border-radius: 15px;
+	background: white;
+	width: 90%;
+	height: 160px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+	.pop2{
+	display: flex;
+	flex-direction: row;
+	grid-area: 2 / 1 / 3 / 2;
+	margin : 20px 20px 10px 20px;
+	border: 3px solid white;
+	border-radius: 15px;
+	background: white;
+	width: 90%;
+	height: 160px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+}
+
+	.pop3{
+	display: flex;
+	flex-direction: row;
+	grid-area: 3 / 1 / 4 / 2;
+	margin : 20px 20px 10px 20px;
+	border: 3px solid white;
+	border-radius: 15px;
+	background: white;
+	width: 90%;
+	height: 160px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+	.blocimgpop{
+	width: 40%;
+	margin-right: 20px;
+}
+
+	.imgpop{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius:15px;
+ 
+}
+
+
+/* bloc hébergments */
+
+	#lodging{
+	order: 2;
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	width: 90%;
+	border-radius: 15px;
+	margin: 20px;
+}
+
+	.titrelodging{
+	font-size: 30px;
+}
+	.lodginggrid{
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: repeat(6, 50%);
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+	margin: 20px;
+	padding: 20px;
+	justify-content:center;	
+	align-items: center;
+}
+
+
+	.lodgingcard1{
+	display: flex;
+	flex-direction: column;
+	grid-area: 1 / 1 / 2 / 2;
+	border: 3px solid white;
+	border-radius: 15px;
+	background: white;
+	width: 90%;
+	margin-top: 20px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+	
+	.lodgingcard2{
+	display: flex;
+	flex-direction: column;
+	grid-area: 2 / 1 / 3 / 2;;
+	border: 3px solid white;
+	border-radius: 15px;
+	background: white;
+	width: 90%;
+	margin-top: 20px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+	.lodgingcard3{
+	display: flex;
+	flex-direction: column;
+	grid-area:3 / 1 / 4 / 2;
+	border: 3px solid white;
+	border-radius: 15px;
+	background: white;
+	width: 90%;
+	height: 100%;
+	margin-top: 20px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+
+	.lodgingcard4{
+	display: flex;
+	flex-direction: column;
+	grid-area: 4 / 1 / 5 / 2;;
+	border: 3px solid white;
+	border-radius: 15px;
+	background: white;
+	width: 90%;
+	height: 100%;
+	margin-top: 20px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+	.lodgingcard5{
+	display: flex;
+	flex-direction: column;
+	grid-area: 5 / 1 / 6 / 2;
+	border: 3px solid white;
+	border-radius: 15px;
+	background: white;
+	width: 90%;
+	height: 100%;
+	margin-top: 20px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+	.lodgingcard6{
+	display: flex;
+	flex-direction: column;
+	grid-area: 6 / 1 / 7 / 2;
+	border: 3px solid white;
+	border-radius: 15px;
+	background: white;
+	width: 90%;
+	height: 100%;
+	margin-top: 20px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+	
+.blocimglodging{
+	width: 100%;
+	height:180px;
+	
+	overflow: hidden;
+
+}
+
+.imglodging{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+
+}
+
+.imgdescription{
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	background: white;
+	position: relative;
+	bottom: 10px;
+	z-index: 1;
+	height: 65px;
+	padding-bottom: 5px;
+}
+
+.namecardlodging{
+	position: relative;
+	font-size: 20px;
+	bottom: 10px;
+	width: 100%;
+	padding-left: 20px;
+}
+
+
+	.checked{
+	color:#0065FC;
+	font-size: 15px;
+}
+
+	.unchecked{
+	color: #DEEBFF;
+	font-size: 15px;
+}
+
+	.Afficher{
+	font-size: 20px;
+	margin-top: 30px;
+}
+}
+
+
+@media (max-device-width: 375px){
+
+
+section{
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#popular{
+	order:1;
+	display: flex;
+	flex-direction: column;
+	border: solid 1px #F2F2F2;
+	background-color: #F2F2F2;
+	width: 100%;
+	height: 1500px;
+	margin-bottom: 40px;
+
+}
+
+.asidepopgrid {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.Title_popular{
+	margin: 60px 10px 0px 10px;
+}
+
+.titlepopular{
+	margin-left: 20px;
+	padding-left: 40px;
+	font-size: 60px;
+}
+
+.chart{
+	font-size: 60px;
+	position: relative;
+	bottom: 10px;
+	padding-right: 40px;
+}
+
+.bandeaublocpop{
+	margin-left: 20px;
+}
+
+.bloctxtpop{
+	position: relative;
+	bottom: 30px;
+	font-size: 50px;
+}
+
+.bloctxtpop1{
+	position: relative;
+	bottom: 30px;
+	font-size: 50px;
+}
+
+.pricepop{
+	position: relative;
+	bottom: 40px;
+	font-size: 40px;
+}
+
+.pop1 { 
+
+	border: 12px solid white;
+	border-radius: 50px;
+	background: white;
+	width: 85%;
+	height: 350px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.pop2 { 
+
+	border: 12px solid white;
+	border-radius: 50px;
+	background: white;
+	width: 85%;
+	height: 350px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+
+.pop3 { 
+
+	border: 12px solid white;
+	border-radius: 50px;
+	background: white;
+	width: 85%;
+	height: 350px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.blocimgpop{
+	width: 40%;
+	margin-right: 20px;
+}
+
+.imgpop{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-top-left-radius: 50px;
+	border-bottom-left-radius:50px;
+	
+ }
+
+/*bloc hébergments*/
+
+#lodging{
+	order: 2;
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	width: 100%;
+	height: 3800px;
+}
+
+.titrelodging{
+	font-size: 60px;
+	margin: 40px;
+	padding-left: 30px;
+}
+
+#lodginggrid{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.lodgingcard1{
+	display: flex;
+	flex-direction: column;
+	border: 12px solid white;
+	border-radius: 50px;
+	background: white;
+	width: 85%;
+	height: 500px;
+	margin-top: 30px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.lodgingcard2{
+	display: flex;
+	flex-direction: column;
+	border: 12px solid white;
+	border-radius: 50px;
+	background: white;
+	width: 85%;
+	height: 500px;
+	margin-top: 30px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.lodgingcard3{
+	display: flex;
+	flex-direction: column;
+	border: 12px solid white;
+	border-radius: 50px;
+	background: white;
+	width: 85%;
+	height: 500px;
+	margin-top: 30px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.lodgingcard4{
+	display: flex;
+	flex-direction: column;
+	border: 12px solid white;
+	border-radius: 50px;
+	background: white;
+	width: 85%;
+	height: 500px;
+	margin-top: 30px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.lodgingcard5{
+	display: flex;
+	flex-direction: column;
+	border: 12px solid white;
+	border-radius: 50px;
+	background: white;
+	width: 85%;
+	height: 500px;
+	margin-top: 30px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.lodgingcard6{
+	display: flex;
+	flex-direction: column;
+	border: 12px solid white;
+	border-radius: 50px;
+	background: white;
+	width: 85%;
+	height: 500px;
+	margin-top: 30px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.blocimglodging{
+	width: 100%;
+	height: 70%;
+	overflow: hidden;
+
+}
+
+.imglodging{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-top-right-radius: 50px;
+	border-top-left-radius: 50px;
+
+}
+
+.imgdescription{
+	display: flex;
+	flex-direction: column;
+	background: white;
+	position: relative;
+	bottom: 10px;
+	z-index: 1;
+	height: 35%;
+	padding-bottom: 5px;
+}
+
+.namecardlodging{
+	position: relative;
+	bottom: 10px;
+	width: 100%;
+	padding-left: 20px;
+	font-size: 40px;
+}
+
+.Afficher{
+	font-size: 40px;
+	margin: 40px;
+	padding-left: 30px;
+	position: relative;
+	top: 20px;
+}
+.checked{
+	color:#0065FC;
+	font-size: 30px;
+}
+
+.unchecked{
+	color: #DEEBFF;
+	font-size: 30px;
+}
+}

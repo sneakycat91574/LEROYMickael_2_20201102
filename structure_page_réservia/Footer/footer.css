@@ -1,0 +1,134 @@
+		a{
+			color: black;
+			text-decoration: none;
+		}
+
+		ul{
+			list-style-type: none;}	
+
+
+	@media (min-width: 1000px){
+
+
+		footer{
+			border: 1px solid #F2F2F2;
+			background-color: #F2F2F2;
+			width: 100%;
+			height: 160px;
+			color: black;
+			position: absolute;
+			bottom: 0px;
+		}
+
+		.blocfooter{
+			display: flex;
+			justify-content: flex-start;
+			
+
+		
+			width: 80%;
+		}
+
+		#à_Propos{
+			margin: 10px;
+			width: 40%;
+		}
+
+		#Nos_hébergements , #Assistance{
+			margin: 10px;
+			width: 30%;
+		}
+
+		#Assistance{
+			padding-left: 40px;
+		}
+
+		.site{
+			margin-top: 10px;
+		}
+	}
+
+
+	@media (max-device-width:700px){
+
+		footer{
+			
+			background-color: #F2F2F2;
+			width: 100%;
+			height: 200px;
+			color: black;
+			position: absolute;
+			bottom: 0px;
+			font-size: 20px;
+		}
+
+		.blocfooter{
+			display: flex;
+			justify-content: flex-start;
+			width: 100%;
+			margin-left: 20px;
+		}
+
+		#à_Propos{
+			margin: 10px;
+			width: 40%;
+		}
+
+		#Nos_hébergements , #Assistance{
+			margin: 10px;
+			width: 30%;
+		}
+
+		#Assistance{
+		
+		}
+
+		.site{
+			margin-top: 10px;
+		}
+	}
+
+	@media (max-device-width:375px){
+
+		footer{
+			background-color: #F2F2F2;
+			width: 100%;
+			height: 1300px;
+			color: black;
+			position: absolute;
+			bottom: 0px;
+		}
+
+		.blocfooter{
+			position: relative;
+			top: 30px;
+			display: flex;
+			flex-direction: column;
+			font-size: 40px;
+			width: 100%;
+		}
+
+		#à_Propos{
+			width: 100%;			
+			padding-top: 50px;
+			padding-bottom: 20px;
+		}
+
+		#Nos_hébergements , #Assistance{
+			width: 100%;
+			padding-bottom: 20px;
+		}
+
+		.titleblocfooter{
+			position: relative;
+			bottom: 40px;
+			width: 100%;
+			
+		}
+
+		.site{
+			margin-top: 30px;
+			
+		
+		}
+	}

@@ -1,0 +1,149 @@
+a{
+	text-decoration: none;
+	color: black;
+	font-style: bold;
+}
+
+#Filter{
+	display: flex;
+	
+	width:60%;
+	margin-top: 20px;
+	
+	
+}
+
+.Listefiltres{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+	margin-left:20px;
+
+}
+
+.Money{
+	width: 19%;
+	border: 1px solid #DEEBFF;
+	border-radius: 25px 25px 25px 25px;
+	margin-right:20px;
+
+}
+
+.money_icon{
+	margin-right:8px;
+	color: #0065FC;
+	text-align: center;
+	border-radius: 50%;
+	border: 1px solid  #DEEBFF ;
+	width: 30px;
+	padding: 2px;
+	background: #DEEBFF;
+	
+	line-height:30px;
+
+	cursor: pointer;	
+}
+
+.Family{
+	width: 15%;
+	border: 1px solid #DEEBFF;
+	border-radius: 25px 25px 25px 25px;
+	margin-right:20px;
+
+} 
+
+.family_icon{
+	margin-right:8px;
+	color: #0065FC;
+	text-align: center;
+	border-radius: 50%;
+	border: 1px solid  #DEEBFF ;
+	width: 30px;
+	padding: 2px;
+	background: #DEEBFF;
+	
+	line-height:30px;
+
+	cursor: pointer;	
+}
+
+.Love{
+	width: 18%;
+	border: 1px solid #DEEBFF;
+	border-radius: 25px 25px 25px 25px;
+	margin-right:20px;
+
+}
+
+.Love_icon{
+	margin-right:8px;
+	color: #0065FC;
+	text-align: center;
+	border-radius: 50%;
+	border: 1px solid  #DEEBFF ;
+	width: 30px;
+	padding: 2px;
+	background: #DEEBFF;
+	
+	line-height:30px;
+
+	cursor: pointer;	
+
+}
+.Pet{
+	width: 24%;
+	border: 1px solid #DEEBFF;
+	border-radius: 25px 25px 25px 25px;
+	margin-right:20px;
+}
+
+.Pet_icon{
+	margin-right:8px;
+	color: #0065FC;
+	text-align: center;
+	border-radius: 50%;
+	border: 1px solid  #DEEBFF ;
+	width: 30px;
+	padding: 2px;
+	background: #DEEBFF;
+	
+	line-height:30px;
+
+	cursor: pointer;	
+
+	
+
+
+}
+
+
+.Result /*Résultat de recherche-------------------------------------------------------------------------------------------*/
+{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-top: 20px; 
+}
+.info{
+
+	font-size: 10px;
+	text-align: center;
+	color: #0065FC;
+	
+
+	border-radius: 50%;
+	border: 2px solid #F2F2F2 ;
+    width:20px;
+    background:white;
+    height:15px;
+    padding-top: 5px;
+    margin-right: 10px;
+   
+
+}
+.nombre{
+	color: black;
+	position: absolute;
+	top:8px;
+	left:60px;
