@@ -930,10 +930,17 @@ height:1000px;
 }
 
 .blocfooter{
-	width: 100%;
+  width: 100%;
+}
 }
 
 @media (max-width:600px){
+
+body{
+margin :0px;
+width: 100%;
+height: 100%;
+}
 
 header{
 width: 100%;
@@ -942,22 +949,45 @@ width: 100%;
 .bandeauheader{
 margin-top: 10px;
 width: 100%;
+height: 150px;
 display: flex;
 flex-direction: column;
+margin-left: 1px;
 }
 
 .logobloc{
 order: 1;
+position: relative;
+right: 130px;
+}
+
+#entete {
+position: relative;
+bottom: 90px;
+}
+
+
+input{
+	width: 50%;
 }
 
 .inscrireheader{
 	order: 2;
 	display: flex;
-	align-items: center;
-	position: absolute;
-	right: 0px;
-	top: 80px;
+	position: relative;
+	bottom: 60px;
+	left: 200px;
 	margin-right: 20px;
+}
+
+#search{
+	position: relative;
+    bottom: 50px;
+}
+
+.cadrehebergements{
+	position: relative;
+	bottom: 120px;
 }
 
 .nav3{
@@ -978,16 +1008,17 @@ order: 1;
 .navbloc{
 	display: flex;
 	flex-direction: row;
-	align-items: center;
+	align-items: stretch;
 	justify-content: space-between;
 	width: 100%;
-	margin-top: 20px;
+	position: relative;
+	bottom: 80px;
 }
 
 .nav1{
 	color: #0065FC;
 	text-align: center;
-	border-bottom: 5px solid #0065FC;
+	border-bottom: 5px solid #0065FC;;
 	padding-bottom: 20px;
 	width: 50%;
 }
@@ -997,6 +1028,13 @@ order: 1;
 	border-bottom: 5px solid #F2F2F2;
 	padding-bottom: 20px;
 	width: 50%;
+}
+
+
+.nav1:hover, .nav2:hover{
+	border-top:none;
+	transition: all 0.1s cubic-bezier(.0,.0,.0,0);
+	font-weight: bold;
 }
 
 #entete{
@@ -1024,6 +1062,13 @@ order: 1;
 	margin-left: 20px;
 	display: flex;
 	flex-direction: column;
+	position: relative;
+	bottom: 150px;
+}
+
+.Result{
+   position: relative;
+    bottom: 140px;
 }
 
 .titlefilter{
@@ -1036,14 +1081,27 @@ order: 1;
 	align-items: center;
 }
 
+.titrelodging{
+position: relative;
+left: 20px;
+}
+
+#lodging{
+display: flex;
+flex-direction: column;
+background: white;
+height: 1400px;
+padding: 0px;
+margin:10px;
+width: 100%;
+}
+
 #lodginggrid{
 display: grid;
-grid-template-columns: 90%;
-grid-template-rows: repeat(6, 10%);
-grid-column-gap: 40px;
-grid-row-gap: 40px;
-height: 5000px;
-}
+justify-content: center;
+grid-template-columns: 95%;
+grid-template-rows: repeat(6, 35%);
+grid-row-gap: 40px;}
 
 .lodgingcard1{
 grid-area: 1 / 1 / 2 / 2;
@@ -1075,13 +1133,26 @@ grid-area: 6 / 1 / 7 / 2;
 width: 100%;
 }
 
+.Afficher{
+position: relative;
+top: 760px;
+left: 20px;
+}
+
+#Activités{
+width: 100%;
+height: 1700px;
+position: relative;
+bottom: 150px;
+}
+
 .Gridcard{
 display: grid;
-grid-template-columns: 90%;
-grid-template-rows: repeat(6, 30%);
-grid-column-gap: 40px;
+justify-content: flex-start;
+grid-template-columns: 95%;
+grid-template-rows: repeat(6, 25%);
 grid-row-gap: 40px;
-height: 1000px;
+
 }
 
 .Card_vieuxport{
@@ -1129,5 +1200,119 @@ height: 1000px;
   grid-area: 6 / 1 / 7 / 2;
   border-radius: 15px;
   overflow: hidden;
+}
+
+footer{
+width: 100%;
+position: relative;
+bottom: 80px;
+height: 500px;
+}
+
+.blocfooter{
+position: relative;
+height: 550px;
+background: #F2F2F2;
+top: 30px;
+display: flex;
+flex-direction: column;
+width: 100%;
+}
+
+#à_Propos{
+width: 100%;			
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+#Nos_hébergements , #Assistance{
+width: 100%;
+}
+
+#Assistance{
+position: relative;
+right: 40px;
+}
+
+.titleblocfooter{
+position: relative;
+bottom: 10px;
+width: 100%;
+}
+
+.site{
+margin-top: 10px;
+}
+}
+
+@media (max-width: 425px){
+
+.logobloc{
+	position: relative;
+	right: 100px;
+
+}
+.inscrireheader{
+	position: relative;
+	bottom: 60px;
+	left: 150px;
+}
+
+.Listefiltres{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+#lodginggrid{
+display: grid;
+justify-content: center;
+grid-template-columns: 90%;
+grid-template-rows: repeat(6, 40%);
+grid-row-gap: 20px;}
+
+.titrelodging, .Title_popular, .Title_bloc_activités{
+   font-size: 20px;
+}
+
+.imgdescription {
+    height: 33%;
+}
+
+.namecardlodging {
+    position: relative;
+    bottom: 10px;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+#popular{
+	display: flex;
+	flex-direction: column;
+	margin: 10px;
+	padding: 10px;
+	border-radius:0px;
+	background-color: #F2F2F2;
+	width: 95%;
+	height: 600px;
+}
+
+.Gridcard{
+display: grid;
+justify-content: flex-start;
+grid-template-columns: 95%;
+grid-template-rows: repeat(6, 20%);
+grid-row-gap: 20px;
+}
+
+.checked{
+	color:#0065FC;
+	font-size: 10px;
+}
+
+.unchecked{
+	color: #DEEBFF;
+	font-size: 10px;
 }
 }
