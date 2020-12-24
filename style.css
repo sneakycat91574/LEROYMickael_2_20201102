@@ -1308,7 +1308,9 @@ margin-top: 10px;
 body{
 	width: 100%;
 }
-
+.bandeauheader{
+	margin-top: 20px;
+}
 .logobloc{
 	position: relative;
 	right: 100px;
@@ -1465,6 +1467,9 @@ grid-row-gap: 20px;
 
 @media (max-width: 375px){
 
+.bandeauheader{
+	margin-top: 20px;
+}
 
 .logobloc {
     position: relative;
@@ -1644,6 +1649,10 @@ position: relative;
 }
 
 @media (max-width: 325px){
+
+.bandeauheader{
+	margin-top: 20px;
+}
 
 .inscrireheader{
 	position: relative;
