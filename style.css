@@ -594,8 +594,6 @@ margin-left: 25px;
 
 .Gridcard{
 display: grid;
-grid-template-columns: repeat(4, 1fr);
-grid-template-rows: repeat(500px 240px 500px 240px 240px 240px);
 grid-column-gap: 20px;
 grid-row-gap: 20px;
 height: 550px;
@@ -679,7 +677,7 @@ height: 550px;
   height: 100%;
 }
 
-.element4, .element5,{
+.element4, .element5{
   height: 100%;
 }
 
